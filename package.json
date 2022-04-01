@@ -1,0 +1,33 @@
+{
+   "name": "q4-sprint2-crud-de-usuario-wallacesfos",
+   "version": "1.0.0",
+   "main": "index.js",
+   "repository": "https://github.com/Kenzie-Academy-Brasil-Developers/q4-sprint2-crud-de-usuario-wallacesfos.git",
+   "author": "wallacesfos <wallacesfos@hotmail.com>",
+   "license": "MIT",
+   "dependencies": {
+      "@types/jsonwebtoken": "^8.5.8",
+      "bcrypt": "^5.0.1",
+      "dotenv": "^16.0.0",
+      "express": "^4.17.3",
+      "jsonwebtoken": "^8.5.1",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "typeorm": "0.2.45",
+      "uuid": "^8.3.2",
+      "yup": "^0.32.11"
+   },
+   "devDependencies": {
+      "@types/bcrypt": "^5.0.0",
+      "@types/express": "^4.17.13",
+      "@types/node": "^16.11.10",
+      "@types/uuid": "^8.3.4",
+      "ts-node": "10.4.0",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "4.5.2"
+   },
+   "scripts": {
+      "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+      "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+   }
+}
