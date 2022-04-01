@@ -1,10 +1,10 @@
 export default {
    "type": "postgres",
-   "host": "localhost",
+   "host": process.env.POSTGRES_HOST,
    "port": 5432,
-   "username": "postgres",
-   "password": "traquinas123",
-   "database": "03TypeORM",
+   "username": process.env.POSTGRES_USERNAME,
+   "password": process.env.POSTGRES_PASSWORD,
+   "database": process.env.POSTGRES_DATABASE,
    "synchronize": true,
    "logging": false,
    "entities": [
